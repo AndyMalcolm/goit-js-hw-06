@@ -16,3 +16,10 @@ Elements: 3
 
 Category: Technologies
 Elements: 5
+
+const array = Animals;
+
+array.forEach(function(element, index) {
+  console.log(`Category: ${h2}
+  Elements: ${li}`);
+});
