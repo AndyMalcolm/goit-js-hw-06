@@ -5,10 +5,10 @@ const Products = ['Bread', 'Prasley', 'Cheese'];
 const Technologies = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js'];
 Animals.forEach(function() {
   console.log(`Number of categories: ${categories.length}
-Category: Animals
+Category: ${categories[0]}
 Elements: ${Animals.length}
-Category: Products
+Category: ${categories[1]}
 Elements: ${Products.length}
-Category: Technologies
+Category: ${categories[2]}
 Elements: ${Technologies.length}`);
 });
