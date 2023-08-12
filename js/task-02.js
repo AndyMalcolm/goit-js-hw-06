@@ -8,7 +8,7 @@ const ingredients = [
 ];
 
 
-const newListItem = document.createElement("li");
+/* const newListItem = document.createElement("li");
 function render(arr) {
   const ul = document.querySelector("list");
   const ingredientss = ul.map(item => {
@@ -19,4 +19,14 @@ function render(arr) {
     return;
   })
   ul 
-}
+}*/
+
+/*Напиши скрипт, який для кожного елемента масиву ingredients:
+
+Створить окремий елемент <li>. Обов'язково використовуй метод document.createElement().
+Додасть назву інгредієнта як його текстовий вміст.
+Додасть елементу клас item.
+Після чого, вставить усі <li> за одну операцію у список ul#ingredients. */
+const ulElement = document.getElementById("ingredients");
+const liElements = ingredients.map(ingredient => `<li class="item">${ingredient}</li>`);
+ulElement.innerHTML = liElements.join("");
