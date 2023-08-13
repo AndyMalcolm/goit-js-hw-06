@@ -8,19 +8,6 @@ const ingredients = [
 ];
 
 
-/* const newListItem = document.createElement("li");
-function render(arr) {
-  const ul = document.querySelector("list");
-  const ingredientss = ul.map(item => {
-    const liEl = document.createElement("li");
-    const typeEl = document.createElement("h2");
-    
-    liEl.append(typeEl)
-    return;
-  })
-  ul 
-}*/
-
 /*Напиши скрипт, який для кожного елемента масиву ingredients:
 
 Створить окремий елемент <li>. Обов'язково використовуй метод document.createElement().
