@@ -27,6 +27,17 @@ function render(arr) {
 Додасть назву інгредієнта як його текстовий вміст.
 Додасть елементу клас item.
 Після чого, вставить усі <li> за одну операцію у список ul#ingredients. */
-const ulElement = document.getElementById("ingredients");
+/*const ulElement = document.getElementById("ingredients");
 const liElements = ingredients.map(ingredient => `<li class="item">${ingredient}</li>`);
-ulElement.innerHTML = liElements.join("");
+ulElement.innerHTML = liElements.join("");*/
+function render(arr) {
+  const ulElement = document.getElementById("ingredients");
+
+  arr.forEach(ingredient => {
+    const liElement = document.createElement("li");
+    liElement.className = "item";
+    liElement.textContent = ingredient;
+    ulElement.appendChild(liElement);
+  });
+}
+render(ingredients);
