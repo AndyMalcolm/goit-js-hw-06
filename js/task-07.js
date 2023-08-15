@@ -7,4 +7,4 @@ document.addEventListener('DOMContentLoaded', function () {
       textElement.style.fontSize = fontSizeValue;
     });
   });
-  
+// функцию сделать именнованой и вынести из скобок
