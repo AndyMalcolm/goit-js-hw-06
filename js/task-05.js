@@ -5,7 +5,6 @@ nameInput.addEventListener("input", () => {
   if (nameInput.value === "") {
     nameOutput.textContent = "Anonymous";
   } else {
-    nameOutput.textContent = nameInput.value.trim();
+    nameOutput.textContent = nameInput.trim.value;
   }
 });
-//нужен метод trim, который уберет пробелы

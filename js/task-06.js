@@ -14,4 +14,4 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-//тоже нужен метод trim, который уберет пробелы
+//тоже нужен метод trim, который уберет пробелы и убрать зис
