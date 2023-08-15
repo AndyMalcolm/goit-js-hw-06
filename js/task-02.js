@@ -14,15 +14,15 @@ const ingredients = [
 Додасть назву інгредієнта як його текстовий вміст.
 Додасть елементу клас item.
 Після чого, вставить усі <li> за одну операцію у список ul#ingredients. */
-// function render(arr) {
-//   const ulElement = document.getElementById("ingredients");
+function render(arr) {
+  const ulElement = document.getElementById("ingredients");
 
-//   arr.forEach(ingredient => {
-//     const liElement = document.createElement("li");
-//     liElement.className = "item";
-//     liElement.textContent = ingredient;
-//     ulElement.appendChild(liElement);
-//   });
-// }
-// render(ingredients);
+  arr.forEach(ingredient => {
+    const liElement = document.createElement("li");
+    liElement.className = "item";
+    liElement.textContent = ingredient;
+    ulElement.appendChild(liElement);
+  });
+}
+render(ingredients);
 // чуть исправить

@@ -14,3 +14,4 @@ decrementButton.addEventListener('click', () => {
 incrementButton.addEventListener('click', () => {
   valueSpan.textContent = ++counterValue;
 });
+//лучше постфиксы, а не префиксы
