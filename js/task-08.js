@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const passwordInput = loginForm.elements.password;
   
       if (!emailInput.value || !passwordInput.value) {
-        alert('Please fill in all fields.');
+       return alert('Please fill in all fields.');
       } else {
         const formData = {
           email: emailInput.value,
