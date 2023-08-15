@@ -14,3 +14,4 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+//тоже нужен метод trim, который уберет пробелы
