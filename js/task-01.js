@@ -13,4 +13,4 @@
 // Category: ${categories[2]}
 // Elements: ${Technologies.length}`);
 // });
-pererobyty
+//переделать

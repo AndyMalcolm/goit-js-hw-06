@@ -25,4 +25,4 @@ const ingredients = [
 //   });
 // }
 // render(ingredients);
-pidpravyty
+// чуть исправить
