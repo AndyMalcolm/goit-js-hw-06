@@ -8,10 +8,9 @@ const valueSpan = document.getElementById('value');
 let counterValue = 0;
 
 decrementButton.addEventListener('click', () => {
-  valueSpan.textContent = --counterValue;
+  valueSpan.textContent = counterValue--;
 });
 
 incrementButton.addEventListener('click', () => {
-  valueSpan.textContent = ++counterValue;
+  valueSpan.textContent = counterValue++;
 });
-//лучше постфиксы, а не префиксы
