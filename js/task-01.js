@@ -13,7 +13,6 @@
 // Category: ${categories[2]}
 // Elements: ${Technologies.length}`);
 // });
-//переделать
 const categoriesList = document.querySelectorAll('.item'); // Отримуємо всі елементи li.item
 console.log(`Number of categories: ${categoriesList.length}`);
 categoriesList.forEach(category => {
