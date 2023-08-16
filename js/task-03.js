@@ -17,7 +17,7 @@ const galleryList = document.querySelector(".gallery");
 const imagesMarkup = images
   .map(
     image =>
-      `<li class="gallery-item"><img src="${image.url}" alt="${image.alt}" class="gallery-img" width = "300px"></li>`)
+      `<li class="gallery-item" list-style: none><img src="${image.url}" alt="${image.alt}" class="gallery-img" width = "300px"></li>`)
   .join("");
 galleryList.innerHTML = imagesMarkup;
     //меньше картинки и убрать маркеры(точки)
