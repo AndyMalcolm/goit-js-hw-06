@@ -16,13 +16,12 @@ const ingredients = [
 Після чого, вставить усі <li> за одну операцію у список ul#ingredients. */
 function render(arr) {
   const ulElement = document.getElementById("ingredients");
-
-  arr.forEach(ingredient => {
+  const liElements = arr.map(ingredient => {
     const liElement = document.createElement("li");
     liElement.className = "item";
     liElement.textContent = ingredient;
-    ulElement.appendChild(liElement);
+    return liElement;
   });
+  ulElement.append(...liElements);
 }
 render(ingredients);
-// чуть исправить
