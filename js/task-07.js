@@ -1,19 +1,10 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     const fontSizeControl = document.getElementById('font-size-control');
-//     const textElement = document.getElementById('text');
-  
-//     fontSizeControl.addEventListener('input', function () {
-//       const fontSizeValue = this.value + 'px';
-//       textElement.style.fontSize = fontSizeValue;
-//     });
-//   });
-// функцию сделать именнованой и вынести из скобок
 document.addEventListener('DOMContentLoaded', function () {
     const fontSizeControl = document.getElementById('font-size-control');
     const textElement = document.getElementById('text');
-    fontSizeControl.addEventListener('input', onInput);
     function onInput() {
-        const fontSizeValue = this.value + 'px';
+        const fontSizeValue = fontSizeControl.value + 'px';
               textElement.style.fontSize = fontSizeValue;
-        }});
-  onInput();
+        }
+        fontSizeControl.addEventListener('input', onInput);
+        onInput();
+});
