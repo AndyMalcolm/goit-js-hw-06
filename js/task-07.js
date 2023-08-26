@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+
     const fontSizeControl = document.getElementById('font-size-control');
     const textElement = document.getElementById('text');
     function onInput() {
@@ -7,4 +7,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         fontSizeControl.addEventListener('input', onInput);
         onInput();
-});
